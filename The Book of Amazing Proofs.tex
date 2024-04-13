@@ -1,0 +1,351 @@
+% NOTE: This text (which is present here) is the latest updated one. Do not use the other text from any other location for writing this article.
+% NOTE: DO NOT DELETE ANY COMMENT AND ANY CODE
+\documentclass[12pt]{article}
+\usepackage{afterpage}
+\usepackage{amssymb}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{braket}
+\usepackage{commath}
+\usepackage{csquotes}
+\usepackage{esint}
+\usepackage{enumitem}
+% \usepackage{fourier} %changes the font style
+\usepackage{graphicx}
+\usepackage{latexsym}
+\usepackage{mathtools}
+%\usepackage{txfonts} %darkens text
+\usepackage[utf8]{inputenc}
+\usepackage{siunitx}
+\usepackage{textcomp}
+\usepackage{wasysym}
+\begin{document}
+    \begin{center}
+        \vspace*{0.5cm}
+            
+        \Huge
+        \textbf{The Book of Amazing Proofs}
+            
+        \vspace{0.5cm}
+        \Large
+        \emph{A Collection of Proofs and Derivations Related to\\
+        Mathematics, Physics and Electronics}
+
+        % \includegraphics[]{}
+        
+        \vspace{13.5cm}
+        ANGAD SINGH\\
+        \thispagestyle{empty}
+
+        \vspace{5.5cm}
+        % \vfill 
+        \emph{a book dedicated to all the thinkers of this world...}\\
+        
+        % \textbf{}
+            
+        
+        \vspace{17.5cm}
+        
+        
+    \end{center}
+
+
+\tableofcontents
+\newpage
+
+NOTE: This text (which is present here) is the latest updated one. Do not use the other text from any other location for writing this article.
+
+\section{Mathematics}
+\subsection{Is $\pi$ irrational?}
+
+
+\subsection{Is $e$ irrational?}
+
+
+
+\subsection{Types of Functions}
+Analytic function:\\
+Arithmetic function:\\
+Bijective function:\\
+Closed function:\\
+Compactly supported function:\\
+Complex function:\\
+Computable function:\\
+Continuous function:\\
+Continuously differentiable function:\\
+Convex function:\\
+Differentiable function:\\
+Dirac delta function:\\
+Entire function:\\
+Harmonic function:\\
+Holomorphic function:\\
+Homeomorphism:\\
+Hypercomplex function:\\
+Implicit function:\\
+Injective function:\\
+Integrable function:\\
+Linear function:\\
+Lipschitz function, Holder function:\\
+Locally integrable function:\\
+Meromorphic function:\\
+Monotonic function:\\
+Multivalued function:\\
+Nowhere continuous function:\\
+Nowhere differentiable function (Weierstrass function):\\
+Open function:\\
+p-adic function:\\
+Piecewise function:\\
+Quasi-analytic function:\\
+Quaternionic function:\\
+Random function:\\
+Real function:\\
+Singular function:\\
+Smooth function:\\
+Square-integrable function:\\
+Surjective function:\\
+Symmetric function:\\
+
+
+
+
+
+
+\section{Physics}
+\subsection{From Kepler to Newton}
+In this article, we will derive Newton's law of universal gravitation from Kepler's and Newton's laws of motion\\ \\
+Given:\\
+1. The orbit of a planet is an ellipse with the Sun at one of the two foci.
+$$r(\theta) = r = \frac{b^2/a}{1-e\cos(\theta)}$$
+2. A line segment joining a planet and the Sun sweeps out equal areas during equal intervals of time.
+$$\frac{dA}{dt}=k$$
+3. The square of a planet's orbital period ($T$) is proportional to the cube of the length of the semi-major axis ($a$) of its orbit.
+$$T^2=\sigma a^3$$
+4. A body remains at rest, or in motion at a constant speed in a straight line, unless acted upon by a force ($\vec F$).
+$$\vec F = 0 \implies \vec v=\text{constant vector}$$
+5. When a body is acted upon by a force ($\vec F$), the time rate of change of its momentum ($\vec p$) equals the force.
+$$\vec F=\frac{d\vec p}{dt}=m\vec a$$
+6. If two bodies exert forces on each other, these forces have the same magnitude but opposite directions.
+$$\vec F_{12}=-\vec F_{21}$$
+7. Equivalence Principle: Let the inertial and gravitational mass of an object be $m_{inertial}$ and $m_{gravitational}$ respectively, then the equivalence principle states that
+$$m_{inertial}=m_{gravitational}=m$$
+{\em Proof}:\\
+Let us consider a planet (of mass $m$ (from [7])) revolving around the Sun (of mass $M$) in an elliptical orbit [1] of eccentricity $e$. The center of the Sun lies at its left focus (O, origin). Let $r$ be the length of the line joining the centers of the Sun (O) and that planet (P) and $\theta$ be the angle between the line OP and the x-axis.\\
+Let there be a point Q close to the point P such that $\angle POQ = d\theta$, then the area ($dA$) of the part of the ellipse enclosed by the points P, O and Q is given by,
+$$dA = \frac{1}{2}(rd\theta)(r)=\frac{1}{2}r^2d\theta$$
+Let the time taken by the planet to travel from P to Q be $dt$, then we have,
+$$\frac{dA}{dt} = \frac{1}{2}r^2\frac{d\theta}{dt}=\frac{1}{2}r^2\dot\theta$$
+From [2], we have,
+$$\frac{1}{2}r^2\dot\theta=k\implies \frac{d}{dt}(r^2\dot\theta)=\frac{d}{dt}(2k) \implies r^2\ddot{\theta}+2r\dot r\dot\theta=0 \implies r\ddot{\theta}+2\dot r\dot\theta=0$$
+Let $\vec r$, $\vec v$ and $\vec a$ be the position vector, velocity and the acceleration of the planet. Therefore, we have,
+$$\vec r = r\hat r = (r,0)$$
+Since the vectors $\vec r$, $\vec v$ and $\vec a$ are in polar coordinates, we have,
+$$\hat r = \cos(\theta)\hat i+\sin(\theta)\hat j$$
+$$\hat \theta = -\sin(\theta)\hat i+\cos(\theta)\hat j$$
+Differentiating the above unit polar vectors, we have,
+$$\dot{\hat r} = (-\sin(\theta)\hat i+\cos(\theta)\hat j)\dot\theta = \dot\theta\hat\theta = (0,\dot\theta)$$
+$$\dot{\hat \theta} = (-\cos(\theta)\hat i-\sin(\theta)\hat j)\dot\theta = -\dot\theta\hat r = (-\dot\theta,0)$$
+Thus,
+$$\vec v = \frac{d\vec r}{dt} = \dot r\hat r+r\dot{\hat r} = \dot r\hat r+r\dot\theta\hat\theta = (\dot r,r\dot\theta)$$
+and 
+$$\vec a = \frac{d\vec v}{dt} = \ddot r\hat r + \dot r\dot{\hat r} + \dot r\dot\theta\hat\theta + r\ddot\theta\hat\theta + r\dot\theta\dot{\hat\theta}=(\ddot r-r\dot\theta^2,r\ddot\theta+2\dot r\dot\theta)$$
+Since, $r\ddot{\theta}+2\dot r\dot\theta=0$, we have,
+$$\vec a =(\ddot r-r\dot\theta^2,0) = (\ddot r-r\dot\theta^2)\hat r $$
+Thus, if a planet satisfies [2] only, then the acceleration of that planet is radial.\\
+From [1] and [2], we have,
+$$\frac{dr}{dt} = \dot r = -\frac{le\sin(\theta)\dot\theta}{(1-e\cos(\theta))^2} = -\frac{er^2\sin(\theta)\dot\theta}{l} = -\frac{2ke\sin(\theta)}{l}$$
+where, $l=b^2/a$ is the length of the latus rectum.\\
+Therefore,
+$$\ddot r = -\frac{2ke\cos(\theta)\dot\theta}{l}=-\frac{4k^2e\cos(\theta)}{r^2l}$$
+Simplifying the expression of $\vec a$, we have,
+$$\vec a = \Bigg(-\frac{4k^2e\cos(\theta)}{r^2l}-\frac{4k^2}{r^3}\Bigg)\hat r = -\frac{4k^2}{r^2}\Bigg(\frac{e\cos(\theta)}{l}+\frac{1}{r}\Bigg)\hat r = -\frac{4k^2}{lr^2}\hat r$$
+Thus, if a planet satisfies [1] and [2] only, then the acceleration of that planet is a central field.\\
+From [5], we obtain the force ($\vec F_{12}$) acting on the planet due to the Sun, as,
+$$\vec F_{12} = m\vec a_{12} = m\vec a = -\frac{4k^2m}{lr^2}\hat r$$
+Using [6], we obtain the force ($\vec F_{21}$) acting on the Sun due to the planet, as,
+$$\vec F_{21} = -\vec F_{12} = \frac{4k^2m}{lr^2}\hat r$$
+Thus, if a planet satisfies [1], [2], [5] and [6] only, then the force acting on the planet due to the Sun or vice-versa is attractive in nature and is inversely proportional to the square of the length of the line joining there centers.\\
+From [2], we have,
+$$\frac{dA}{dt} = k \implies \frac{A}{T} = k \implies \frac{\pi ab}{T} = k$$
+Substituting the above equality in [3], we have,
+$$T^2=\sigma a^3 \implies \frac{\pi^2 a^2b^2}{k^2}=\sigma a^3 \implies \frac{\pi^2 l}{k^2}=\sigma$$
+Substituting the above equality in the expression of $\vec a_{12}$, we have,
+$$\vec a_{12} = -\frac{4\pi^2}{\sigma r^2}\hat r \implies \vec F_{12} = -\frac{4\pi^2m}{\sigma r^2}\hat r$$
+similarly,
+$$\vec F_{21} = \frac{4\pi^2m}{\sigma r^2}\hat r = M\vec a_{21} \implies \vec a_{21} = \frac{4\pi^2m}{M\sigma r^2}\hat r $$
+Since, $\vec a_{12}$ is independent of the mass of the planet, therefore, $\vec a_{21}$ should be independent of the mass of the Sun (since nature loves symmetry), therefore,
+$$\sigma M  = \beta = \text{constant}$$
+Modifying the expressions of $\vec F_{12}$, we obtain,
+$$\vec F_{12} = -\frac{4\pi^2Mm}{\beta r^2}\hat r \implies \vec F \propto -\frac{Mm}{r^2}\hat r \implies \vec F = -\frac{GMm}{r^2}\hat r$$
+where,
+$$G=\frac{4\pi^2}{\beta}=\frac{4\pi^2}{\sigma M} \implies \sigma=\frac{4\pi^2}{GM}$$
+Thus, [3] can be written as,
+$$T^2=\frac{4\pi^2}{GM}a^3$$
+
+
+\subsection{From Newton to Kepler}
+In this article, we will derive Kepler's laws from Newton's law of universal gravitation.\\ \\
+Given:\\
+1. Every point mass attracts every other point mass by a force acting along the line intersecting the two points. The force is proportional to the product of the two masses, and inversely proportional to the square of the distance between them.
+$$\vec F \propto -\frac{Mm}{r^3}\vec r \implies \vec F = -\frac{GMm}{r^2}\hat r $$
+
+
+\subsection{Maxwell Equations}
+
+
+\subsection{From Maxwell to Ohm}
+Fundamental article regarding the derivation of Ohm's law from the definition of $I$, $V$ and other fundamental physical quantities.\\
+NOTE: Fundamental quantities are $x$ (location in space), $t$ (location in time), $m$ (rest mass) and $q$ (charge)\\ \\
+Definitions:\\
+1. The electric field ($\vec E$) is defined at each point in space as the force per unit charge that would be experienced by a vanishingly small positive test charge if held stationary at that point.\\
+2. The electric current ($I$)is defined as the net rate of flow of electric charge through a surface or into a control volume.\\
+3. If the electric field can be written in the form, $\vec E = -\vec\nabla \phi$, then $\phi$ is a scalar field, called as, the potential (measured at a point in space).\\ \\
+Assumptions:\\
+1. The electrostatic force ($\vec F)$ of attraction or repulsion between two point charges is directly proportional to the product of the magnitudes of charges and inversely proportional to the square of the distance between them.\\
+2. 
+Mathematically,
+$$\vec F \propto \frac{q_1q_2}{r^3}\vec r \implies \vec F = \frac{k_eq_1q_2}{r^2}\hat r$$
+$$\vec E \propto \frac{q}{r^3}\vec r \implies \vec E = \frac{k_eq}{r^2}\hat r$$
+$$I=\frac{dq}{dt}$$
+$$\vec E = -\vec\nabla V$$
+Let there be a conductor
+
+
+\subsection{From classical mechanics to special relativity}
+Try to explain classical mechanics, classical electromagnetic theory and special relativity in a consistent manner (try not to involve GR and QM).\\
+NOTE: Fundamental quantities are $x$ (location in space), $t$ (location in time), $m$ (rest mass) and $q$ (charge)\\ \\
+Defining fundamental quantities $-->$ Newton's laws of motion $-->$ Newton's laws of gravitation $-->$ Coulomb's law $-->$ Electromagnetic laws $-->$ Maxwell's equations $-->$ Electromagnetic radiation and waves $-->$ Speed of light $-->$ Inconsistency during relative motion $-->$ Relativity Postulates $-->$ Consequences
+
+
+\subsection{From special relativity to general relativity}
+
+
+
+
+
+
+\subsection{Principles of quantum mechanics}
+Link: https://arxiv.org/pdf/quant-ph/0405069.pdf\\
+% arXiv:quant-ph/0405069v4 30 Aug 2005
+% quant-ph/0405069
+% On the principles of quantum mechanics
+% Eijiro Sakai∗
+1. Principle of Space and Time\\
+Space is homogeneous, isotropic and flat, which means that space is Euclidean.
+Time is homogeneous.
+\\ \\
+2. Galilean Principle of Relativity\\
+The laws of physics are covariant under Galilean transformations.
+\\ \\
+3. Hamilton’s Principle\\
+The system makes a motion so that its action has the minimum value. The
+action is defined as the integral over time of the Lagrangian. The Lagrangian is
+a real additive scalar function of variables that represent states of a system of
+interest. To guarantee the covariance of physical laws, the Lagrangian should be
+invariant with respect to symmetrical transformations that come from the first
+two principles.
+\\ \\
+4. Wave Principle\\
+States of a microscopic particle are represented by state vectors that satisfy
+the principle of superposition. Especially each state of a microscopic particle is
+completely determined except for internal degrees of freedom if the position of
+the particle is specified. All the state vectors, therefore, that represent a particle
+located at a particular position constitute a complete set. Any dynamical variable
+is represented by an operator which operates on state vectors.
+\\ \\
+5. Probability Principle\\
+If a state of a particle is given by a normalized state vector $\ket{\psi}$ that is a
+superposition of $\ket{k}$:
+$$\ket{\psi} = \sum_{k}c_k\ket{k},$$
+where $\ket{k}$ is the eigenvector corresponding to an eigenvalue $a_k$ of an operator $\hat{A}$, the result of measurement of the dynamical variable $A$ is equal to one of 
+eigenvalues of $\hat{A}$, $a_k$, and the probability that we obtain $a_k$ is given by $|c_k|^2$.
+\\ \\
+6. Principle of Indestructibility and Increatibility of particles\\
+Particles that quantum mechanics deals with are indestructible and increatible.
+
+
+
+\section{Electronics}
+\subsection{Diode Current Equation}
+\subsubsection*{Intrinsic semiconductor}
+An intrinsic (pure) semiconductor is a pure semiconductor without any significant dopant species present. In intrinsic semiconductors the number of excited electrons and the number of holes are equal: n = p. This may be the case even after doping the semiconductor, though only if it is doped with both donors and acceptors equally. In this case, n = p still holds, and the semiconductor remains intrinsic, though doped.
+\subsubsection*{Extrinsic semiconductor}
+An extrinsic semiconductor is one that has been doped; during manufacture of the semiconductor crystal a trace element or chemical called a doping agent has been incorporated chemically into the crystal, for the purpose of giving it different electrical properties than the pure semiconductor crystal, which is called an intrinsic semiconductor.\\ \\
+Lemma 1: Let $p_n(x)$ be the concentration of holes in the N side, then $p_n(x)$ is given by,
+$$p_n(x) = p_n(\infty) + (p_n(0) - p_n(\infty))e^{-x/L_p}$$
+where,\\
+$x$ is the distance of the required point from the edge of the junction\\
+$L_p$ is the diffusion length for holes in the N side\\ \\
+Lemma 2: The diffusion current density $J_{pn}(x)$ of holes in the N side is given by,
+$$J_{pn}(x) = -eD_p\frac{dp_n}{dx}$$
+where,\\
+$e$ is the charge on an electron\\
+$D_p$ is the diffusion constant for holes\\ \\
+Lemma 3: Law of Junction:\\
+According to the Boltzmann statistics in the kinetic theory of gases, we have,
+$$p_p(\infty) = p_n(\infty)e^{V_0/V_T}$$
+and
+$$p_p(\infty) = p_n(0)e^{(V_0-V)/V_T}$$
+where,\\
+$V_0$ is the barrier potential\\
+$V$ is the applied voltage or bias\\
+$V_T = \frac{k_BT}{e}$ is voltage equivalent of temperature\\
+\\ \\
+Diode current equation:\\
+From lemma 2, we have,
+$$I_{pn}(x) = -AeD_p\frac{dp_n}{dx}$$
+where,\\
+$A$ is the area of the cross section of the PN junction\\
+and from lemma 1, we have,
+$$\frac{dp_n}{dx} = -\frac{(p_n(0) - p_n(\infty))}{L_p}e^{-x/L_p}$$
+therefore,
+$$I_{pn}(x) = AeD_p\frac{(p_n(0) - p_n(\infty))}{L_p}e^{-x/L_p}$$
+From lemma 3, we have,
+$$p_n(\infty)e^{V_0/V_T} = p_n(0)e^{(V_0-V)/V_T} \implies p_n(0) = p_n(\infty)e^{V/V_T}$$
+Hence,
+$$p_n(0) - p_n(\infty) = p_n(\infty)\Big(e^{V/V_T}-1\Big)$$
+Thus, the current equation becomes,
+$$I_{pn}(0) = \frac{AeD_pp_n(\infty)}{L_p}\Big(e^{V/V_T}-1\Big)$$
+Similarly,
+$$I_{np}(0) = \frac{AeD_nn_p(\infty)}{L_n}\Big(e^{V/V_T}-1\Big)$$
+Total current obtained is,
+$$I=I_{pn}(0)+I_{np}(0) =\Bigg(\frac{AeD_pp_n(\infty)}{L_p}+\frac{AeD_nn_p(\infty)}{L_n}\Bigg)\Big(e^{V/V_T}-1\Big) $$
+which finally becomes,
+$$I=I_0\Big(e^{\frac{V}{\eta V_T}}-1\Big)$$
+
+
+\subsection{All Network Theorems}
+List of all network theorems with detailed proofs
+
+\subsection{Fourier transform and inversion formula}
+
+
+\subsection{All diode and PN junction related proofs (Boltzmann and Fermi)}
+
+
+\subsection{Karnaugh map}
+
+
+\subsection{Masons's formula, Routh Hurwitz criteria, Nyquist stability criteria}
+
+
+\subsection{Routh Hurwitz criteria}
+
+
+\subsection{Nyquist stability criteria}
+
+
+\subsection{Information theory Entropy}
+
+
+\subsection{Channel capacity theorem}
+
+
+\subsection{SNR, BER, Error correcting codes}
+Write a list of all error correcting codes and data compression techniques
+
+\subsection{Transmission lines equation and related derivations}
+
+
+\printindex
+
+\end{document}
